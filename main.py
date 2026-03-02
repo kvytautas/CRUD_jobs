@@ -1,4 +1,3 @@
-from data import load_job_data
 from list_CRUD import *
 
 jobs = load_job_data()
@@ -13,7 +12,9 @@ while True:
         case '2':
             id_counter = add_job(jobs,id_counter)
         case '3':
+            print_jobs(jobs)
             edit_job(jobs)
+            print_jobs_updated(jobs)
         case '4':
             delete_job(jobs)
         case '5':
