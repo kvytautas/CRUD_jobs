@@ -80,15 +80,6 @@ def edit_job(jobs):
                     if edit_choice2 == i + 1:
                         job["required_skills"][i] = input()
 
-
-
-def print_jobs_updated(jobs):
-    print("Jobs list updated:")
-    for job in jobs:
-        print(
-            f"{job['id']}. Position: {job['position']}  Salary: €{job['salary']:.1f} Location(s): {job['location']}  Required skills: {job['required_skills']}"
-        )
-
 def delete_job(jobs):
     print("Delete job from the list")
     print('Select job id to delete')

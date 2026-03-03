@@ -1,6 +1,8 @@
-from list_CRUD import *
+# from list_CRUD import *
+from file_CRUD import *
+# from db_CRUD import *
 
-jobs = load_job_data()
+jobs = load_jobs()
 id_counter = 3
 
 while True:
@@ -14,7 +16,7 @@ while True:
         case '3':
             print_jobs(jobs)
             edit_job(jobs)
-            print_jobs_updated(jobs)
+            # print_jobs(jobs)
         case '4':
             delete_job(jobs)
         case '5':

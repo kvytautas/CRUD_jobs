@@ -1,0 +1,6 @@
+id,position,salary,location,required_skills
+0,Data analyst,1850,Vln,"['sql', 'python', 'powerbi', 'windows', 'excel']"
+1,Expert in Test Scenario Preparation,3850,"Vln, Kns, Hybrid","['Basel4', 'CRR3', 'ICAAP', 'ILAAP']"
+2,Quantitative analyst,4200,Remote,"['Statistics', 'SAS', 'AI']"
+3,Credit Risk Officer,4750,"Vln, Riga, Tallinn","['PowerBI', 'R', 'Github']"
+4,Junior analyst,1560,Kns,"['python', 'sql']"
