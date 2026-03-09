@@ -16,7 +16,6 @@ while True:
         case '3':
             print_jobs(jobs)
             edit_job(jobs)
-            # print_jobs(jobs)
         case '4':
             delete_job(jobs)
         case '5':

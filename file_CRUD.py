@@ -1,10 +1,5 @@
 import csv
 
-# headers = ['id','position','salary','location','required_skills']
-# def load_jobs():
-#     with open("./jobs.csv", mode="r", encoding="utf-8") as file:
-#         return list(csv.DictReader(file))
-
 headers = ['id', 'position', 'salary', 'location', 'required_skills']
 
 def load_jobs():
@@ -12,16 +7,15 @@ def load_jobs():
     with open("./jobs.csv", mode="r", encoding="utf-8") as file:
         reader = csv.DictReader(file)
         for row in reader:
-            # Convert types
-            # row["id"] = int(row["id"])
             row["salary"] = int(row["salary"])
-
-            # Convert required_skills string → list
-            # Assumes CSV stores: "sql, python, excel"
             row["required_skills"] = row["required_skills"].split(", ")
-
             jobs.append(row)
     return jobs
+
+# headers = ['id','position','salary','location','required_skills']
+# def load_jobs():
+#     with open("./jobs.csv", mode="r", encoding="utf-8") as file:
+#         return list(csv.DictReader(file))
 
 def save_jobs(jobs):
     with open('./jobs.csv',mode='w',newline='',encoding="utf-8") as file:
